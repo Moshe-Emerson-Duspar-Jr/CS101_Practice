@@ -1,12 +1,22 @@
 ---
-title: "Exercise3"
-author: "Moshe Emerson Duspar Jr"
+title: "RExercise3_duspar"
+author: "Moshe Emerson Duspar"
 date: "2026-10-14"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
 ```
 
 ### Part A — Creating Vectors: c(), seq(), rep()
@@ -327,7 +337,7 @@ Question #13:
 
 Suppose a classmate stores related data as three separate, unconnected vectors (item_names, item_prices, item_stock) instead of grouping them into one list like inventory. What risks or bugs could this create as the dataset grows or gets reordered? Argue for or against using a list (or, later, a data frame) instead of separate vectors.
 
--Managing data with separate vectors risks index misalignment—altering the order or length of one breaks the link between an item, its price, and its stock status. Bundling them into a list keeps related values grouped together, but a data frame is the ideal solution: it binds attributes into structured rows and columns, ensuring products remain intact whenever you sort, filter, or update the dataset.
+-Using separate vectors can cause mismatches between item names, prices, and stock values if someone changes their order or length. Grouping them in a list like inventory keeps related data together and makes it easier to manage. A data frame is even better for inventory because each row represents one product and each column stores a property, which makes sorting and filtering safer.
 
 
 
