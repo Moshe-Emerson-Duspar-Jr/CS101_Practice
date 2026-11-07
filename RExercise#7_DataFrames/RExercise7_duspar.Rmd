@@ -1,5 +1,5 @@
 ---
-title: "RExercise7_Tignero"
+title: "RExercise7_duspar"
 author: "Moshe Emerson Duspar"
 date: "2026-11-04"
 output: html_document
